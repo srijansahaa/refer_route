@@ -1,38 +1,229 @@
 .App {
+  font-family: 'Raleway', Roboto;
+}
+
+.landingLeft, .landingRight {
+  width: 50%;
+}
+
+.landingLeft {
+  background-color: #001F60;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .mainWrapper {
+    flex-direction: column;
+  }
+  .landingLeft, .landingRight {
+    width: 100%;
+  }
+  .landingRight {
+    margin: 20px 0;
+  }
+  .landingRight > div {
+    width: 80%;
+  }
+  .landingRight buttonWrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+#landingImg {
+  height: 624px;
+  margin: 50px 0;
+}
+
+.landingRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  background-color: #FFFFFF;
+  height: 508px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #DBDBDB;
+  border-radius: 10px;
+  padding: 0 40px;
+}
+
+.landingRight h1 {
+  font-weight: bold;
+  font-size: 64px;
+  color: #FFC002;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.landingRight button {
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 32px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  width: 196px;
+  height: 66px;
+  margin: 40px;
+  border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 1200px) {
+  #buttonWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .landingRight h1 {
+    padding: 0 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width: 568px) {
+  .landingRight h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 992px) {
+  .landingRight #buttonWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+#login {
+  background-color: #001F60;
+}
+
+#signUp {
+  background-color: #FFC002;
+}
+
+.login, .signUp {
+  background-color: #FFFFFF;
+  padding: 32px;
+  border: 1px solid #DBDBDB;
+  border-radius: 10px;
+}
+
+.inputBoxes {
+  height: 66px;
+  background: #FAFAFA;
+  border: 1px solid #DBDBDB;
+  border-radius: 8px;
+  margin: 25px 0;
+  padding-left: 16px;
+  width: 100%;
+}
+
+@media (max-width: 568px) {
+  .inputBoxes {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+.profileBar {
+  background-color: #001F60;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.profileBar .col-3 {
+  display: flex;
+  justify-content: center;
+}
+
+.profileBar .col-9 {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.profileBar h2 {
+  font-weight: bold;
+  font-size: 64px;
+  color: #FFC002;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.profileBar h3 {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 992px) {
+  .profileBar img {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .profileBar .col-3 {
+    display: none;
   }
+}
+
+.bioCol, .wallCol {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 40px;
+  border: 1px solid #DBDBDB;
+}
+
+@media (max-width: 992px) {
+  .wallCol{
+    margin: 10px 0;
+  }
+}
+
+.bioItems {
+  margin: 40px 0;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  color: #001F60;
+}
+
+.bioItems span {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.react-tabs__tab-list {
+  border-bottom: 1px solid #001F60 !important;
+}
+
+.react-tabs__tab {
+  border-bottom: 1px solid #001F60 !important;
+}
+
+.react-tabs__tab--selected {
+  background-color: #001F60 !important;
+  color: #FFFFFF !important;
+}
+
+.posts {
+  border-bottom: 1px solid #E5E5E5;
+  padding: 32px 0;
+}
+
+h6 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #001F60;
+}
+
+p {
+  font-size: 14px;
+}
+
+.timeDate {
+  font-size: 10px;
+  color: #8E8E8E;
 }
